@@ -1,0 +1,29 @@
+Object Oriented Programming Review From Textbook
+
+1. Object represents something physical in real world such as a desk, a book, and a circle.
+2. State of an object is represented by data fields. Circle has a RADIUS, and a WIDTH and a HEIGHT.
+3. Behavior of an object is defined by methods. For a circle you can getArea() or setRadius().
+4. Objects are defined by using a class. A class is a template, a blueprint that
+   defines what an objects data fields and behavior will be.
+5. An object is an instance of a class.
+6. A class provides methods of a special type, known as constructors, which are
+   invoked to create a new object.
+7. A constructor can perform any action, but constructors are designed to
+   perform initializing actions, such as initializing the data fields of objects
+8. Constructors don't have a return type. NOTHING, not even void.
+9. Date.getTime() is milliseconds since January 1st 1970, and Date.toString() is current date.
+10. For Point2D, you can find distance between two points by doing p1.distance(p2).
+11. Use a class variable to share a value with objects
+12. Constants in a class are shared by all objects in a class.
+13. Private makes things only accessible in the same class.
+14. If a class is not defined as public or private (or protected) it is automatically
+    accessible only within the same package.
+15. Public can be accessed from any other class.
+16. Data field encapsulation is when you make data fields private so they can't 
+    be tampered with and don't cause bus or a giant fix to all programs that use the class.
+17. Immutable class needs all data fields to be private, no public setters, no setters for data fields.
+18. The scope of instance and static variables is the entire class, regardless of where the
+variables are declared.
+19. The keyword this refers to the object itself. It can also be used inside a constructor to
+invoke another constructor of the same class.
+20. The this keyword can be used to invoke another constructor of the same class.
