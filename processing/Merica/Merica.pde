@@ -8,7 +8,8 @@ import java.util.StringTokenizer;
 final static String[] FILE_NAMES_ELECTIONS = {
   "USA1960.txt", "USA1964.txt", "USA1968.txt", "USA1972.txt", "USA1976.txt", 
   "USA1980.txt", "USA1984.txt", "USA1988.txt", "USA1992.txt", "USA1996.txt", 
-  "USA2000.txt", "USA2004.txt", "USA2008.txt", "USA2012.txt", "USA2016.txt"
+  "USA2000.txt", "USA2004.txt", "USA2008.txt", "USA2012.txt", "USA2016.txt",
+  "USA2020.txt"
 };
 
 int value;
