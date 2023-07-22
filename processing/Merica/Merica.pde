@@ -41,7 +41,7 @@ void electionResult( ) {
   try {
 
     // ELECTION RESULT DATA
-    Scanner data = new Scanner( new File( dataPath("") + "\\" + fileName ) );
+    Scanner data = new Scanner( new File( dataPath("") + "//" + fileName ) );
 
     electionResults = new String [52][4];
     data.nextLine();
@@ -50,7 +50,7 @@ void electionResult( ) {
     StringTokenizer st;
     while ( data.hasNextLine() ) {
 
-      st = new StringTokenizer( data.nextLine(), "," );
+      st = new StringTokenizer( data.nextLine()c "," );
       
       if ( st.countTokens() > 1 ) {
         electionResults[row][0] = st.nextToken();
@@ -75,7 +75,7 @@ void drawMap() {
   // MAP
   try {
     // USA MAP DATA
-    Scanner scan = new Scanner( new File( dataPath("") + "\\USA.txt" ) );
+    Scanner scan = new Scanner( new File( dataPath("") + "//USA.txt" ) );
 
     float minLong; 
     float minLat;
@@ -158,7 +158,9 @@ void draw() {
 void keyPressed() {
   if ( key >= 'a' && key <= ( 'a' + FILE_NAMES_ELECTIONS.length - 1 )  ) {
     fileName = FILE_NAMES_ELECTIONS[key-'a'];
-    println( fileName );
+    background(200, 200, 200);
+    textSize(75);
+    text( fileName, 240, 585);
     electionResult();
   }
 }
